@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-replicador',
+  selector: 'app-property-binding',
   imports: [],
-  templateUrl: './replicador.component.html',
-  styleUrl: './replicador.component.css'
+  templateUrl: './property-binding.component.html',
+  styleUrl: './property-binding.component.css'
 })
-export class ReplicadorComponent {
+export class PropertyBindingComponent {
   texto: string = ''
 
   actualizarTexto(evento: Event) {

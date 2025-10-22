@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-mostrar-mensaje',
+  selector: 'app-event-binding',
   imports: [],
-  templateUrl: './mostrar-mensaje.component.html',
-  styleUrl: './mostrar-mensaje.component.css'
+  templateUrl: './event-binding.component.html',
+  styleUrl: './event-binding.component.css'
 })
-export class MostrarMensajeComponent {
+export class EventBindingComponent {
   mensaje: string = '';
 
   mostrarMensaje() {

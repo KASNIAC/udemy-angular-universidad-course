@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-tipos-de-get',
+  selector: 'app-encapsulamiento-propiedades',
   imports: [],
-  templateUrl: './tipos-de-get.component.html',
-  styleUrl: './tipos-de-get.component.css'
+  templateUrl: './encapsulamiento-propiedades.component.html',
+  styleUrl: './encapsulamiento-propiedades.component.css'
 })
-export class HijoComponent {
+export class EncapsulamientoPropiedades {
   private titulo = 'Tipos de get';
 
   // Getter de Typescript

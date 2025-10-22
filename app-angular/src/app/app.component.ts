@@ -4,18 +4,18 @@ import { NuevoComponenteComponent } from "./nuevo-componente/nuevo-componente.co
 import { ComponenteEnLineaComponent } from "./componente-en-linea/componente-en-linea.component";
 import { InterpolacionComponent } from "./interpolacion/interpolacion.component";
 import { PadreComponent } from "./padre/padre.component";
-import { HijoComponent } from './tipos-de-get/tipos-de-get.component';
-import { MostrarMensajeComponent } from "./mostrar-mensaje/mostrar-mensaje.component";
-import { ReplicadorComponent } from './replicador/replicador.component';
-import { SaludarComponent } from './saludar/saludar.component';
-import { CalculadoraComponent } from "./calculadora/calculadora.component";
+import { EncapsulamientoPropiedades } from './encapsulamiento-propiedades/encapsulamiento-propiedades.component';
+import { EventBindingComponent } from "./event-binding/event-binding.component";
+import { PropertyBindingComponent } from './property-binding/property-binding.component';
+import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
+
 import { ComponenteIfComponent } from "./componente-if/componente-if.component";
 import { LocalReferenceComponent } from "./local-reference/local-reference.component";
 import { ComponenteForComponent } from "./componente-for/componente-for.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, NuevoComponenteComponent, ComponenteEnLineaComponent, InterpolacionComponent, PadreComponent, HijoComponent, MostrarMensajeComponent, ReplicadorComponent, SaludarComponent, CalculadoraComponent, ComponenteIfComponent, LocalReferenceComponent, ComponenteForComponent],
+  imports: [RouterOutlet, NuevoComponenteComponent, ComponenteEnLineaComponent, InterpolacionComponent, PadreComponent, EncapsulamientoPropiedades, EventBindingComponent, PropertyBindingComponent, TwoWayBindingComponent, ComponenteIfComponent, LocalReferenceComponent, ComponenteForComponent],
   templateUrl: './app.component.html', 
   styleUrl: './app.component.css'
 })
