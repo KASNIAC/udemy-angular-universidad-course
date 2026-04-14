@@ -1,0 +1,10 @@
+<h5 class="text-success mt-3">Agregar Nuevo Producto</h5>
+<form class="d-flex justify-content-between align-items-center my-4 w-50 mx-auto" (submit)="agregarProducto($event)">
+   <input type="text" name="descripcion" id="descripcion" class="form-control me-2 w-75" placeholder="Descripción" autocomplete="off" #descripcionInput>
+   <input type="number" name="precio" id="precio" class="form-control me-2 w-25" placeholder="Precio" autocomplete="off" #precioInput>
+   <button type="submit" class="btn btn-primary">Agregar</button>
+</form>
+
+<!-- Para evitar que la página se recargue al hacer submit, se puede agregar un evento al formulario que capture el evento submit y ejecute la función agregarProducto, pasando el evento como argumento. Dentro de la función agregarProducto, se puede llamar a event.preventDefault() para evitar que la página se recargue.
+
+Ya nos se usa (click)="agregarProducto()" en el button -->

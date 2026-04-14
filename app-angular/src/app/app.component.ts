@@ -12,10 +12,11 @@ import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.compon
 import { ComponenteIfComponent } from "./componente-if/componente-if.component";
 import { LocalReferenceComponent } from "./local-reference/local-reference.component";
 import { ComponenteForComponent } from "./componente-for/componente-for.component";
+import { ViewChildComponent } from './view-child/view-child.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, NuevoComponenteComponent, ComponenteEnLineaComponent, InterpolacionComponent, PadreComponent, EncapsulamientoPropiedades, EventBindingComponent, PropertyBindingComponent, TwoWayBindingComponent, ComponenteIfComponent, LocalReferenceComponent, ComponenteForComponent],
+  imports: [RouterOutlet, NuevoComponenteComponent, ComponenteEnLineaComponent, InterpolacionComponent, PadreComponent, EncapsulamientoPropiedades, EventBindingComponent, PropertyBindingComponent, TwoWayBindingComponent, ComponenteIfComponent, LocalReferenceComponent, ComponenteForComponent, ViewChildComponent],
   templateUrl: './app.component.html', 
   styleUrl: './app.component.css'
 })

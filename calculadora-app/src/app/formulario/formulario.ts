@@ -12,7 +12,7 @@ export class Formulario {
   operandoB: number | null = null;
 
   @Output() resultadoSuma = new EventEmitter<number>();
-  @Input() resultadoHijo!: number;
+  // @Input() resultadoHijo!: number;
   
   sumar() {
     if(this.operandoA && this.operandoB) {

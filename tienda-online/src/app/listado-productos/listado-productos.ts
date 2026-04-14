@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
 import { Producto } from '../producto/producto.model';
 import { FormsModule } from '@angular/forms';
+import { FormularioProducto } from '../formulario-producto/formulario-producto';
+import { ProductoComponent } from '../producto/producto';
 
 @Component({
   selector: 'app-listado-productos',
-  imports: [FormsModule],
+  imports: [FormsModule, FormularioProducto, ProductoComponent],
   templateUrl: './listado-productos.html',
   styleUrl: './listado-productos.scss'
 })
@@ -16,21 +18,7 @@ export class ListadoProductos {
     new Producto('Producto C', 300)
   ];
 
-  descripcionInput: string = '';
-  precioInput: number | null = null; // Puede ser tipo number o de tipo null
-
-  agregarProducto(): void {
-    // Validar que sean valores vacios
-    if(this.descripcionInput.trim() == '' || this.precioInput == null || this.precioInput <= 0) {
-      console.log('Debe ingresar una descripción y un precio válidos');
-      return;
-    }
-    
-    const producto = new Producto(this.descripcionInput, this.precioInput);
+  agregarProducto(producto: Producto): void {
     this.productos.push(producto);
-
-    // Limiamos los campos del formulario
-    this.descripcionInput = '';
-    this.precioInput = null;
   }
 }

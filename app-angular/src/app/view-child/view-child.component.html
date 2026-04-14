@@ -1,0 +1,7 @@
+<div class="container">
+   <h3 class="text-primery">Acceso a elemento del DOM</h3>
+
+   <!-- #referenciaInput es una referencia local, se puede usar para acceder al elemento del DOM desde el componente y manipularlo, por ejemplo, cambiar su valor o estilo. -->
+   <input #referenciaInput type="text" class="form-control w-50 mx-auto" placeholder="Escribe algo">
+   <button class="btn btn-success mt-2" (click)="cambiarTexto()">Cambiar texto</button>
+</div>

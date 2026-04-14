@@ -1,8 +1,10 @@
 <div class="container mt-5">
    <div class="d-flex justify-content-center">
       <div class="w-25">
-         <app-formulario (resultadoSuma)="procesarResultado($event)" [resultadoHijo]="resultado"></app-formulario>
-         <p class="text-center">Resultado: {{resultado}}</p>
+         <app-formulario (resultadoSuma)="procesarResultado($event)"></app-formulario> <!-- [resultadoHijo]="resultadoPadre" -->
+         
+         <!-- <p class="text-center">Resultado: {{resultadoPadre}}</p> -->
+         <app-resultado [resultadoHijo]="resultadoPadre"></app-resultado>
       </div>
    </div>
 </div>
