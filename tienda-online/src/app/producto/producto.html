@@ -2,4 +2,9 @@
    <p>Descricpion: {{productos[0].descripcion}}, Precio: {{productos[0].precio}}</p>
 </div> -->
 
-<li class="list-group-item text-center">{{producto.descripcion}}, ${{producto.precio}}</li>
+<li class="list-group-item text-center">
+   {{producto.descripcion}}, ${{producto.precio}}
+   <button type="submit" class="btn btn-info ms-4" (click)="emitirDetalleProducto()">
+      Ver Detalle
+   </button>
+</li>
